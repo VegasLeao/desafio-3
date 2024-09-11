@@ -1,0 +1,169 @@
+// Variáveis
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-stack: 'Arial', sans-serif;
+$max-width: 1200px;
+$mobile-breakpoint: 768px;
+
+// Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    color: $secondary-color;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Layout
+.site-header {
+    background-color: #343a40;
+    padding: 1rem 0;
+
+    .nav {
+        max-width: $max-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        &__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        &__menu {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+
+            &__item {
+                &__link {
+                    color: #fff;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    max-width: $max-width;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    .hero {
+        text-align: center;
+        padding: 2rem 0;
+        background-color: #e9ecef;
+
+        &__title {
+            font-size: 2rem;
+            color: #343a40;
+        }
+
+        &__description {
+            margin: 1rem 0;
+            color: $secondary-color;
+        }
+
+        &__cta {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: $primary-color;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 1rem;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+
+    .features {
+        margin-top: 3rem;
+
+        &__heading {
+            font-size: 1.75rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .feature {
+                width: 30%;
+                text-align: center;
+
+                &__title {
+                    font-size: 1.5rem;
+                    color: #343a40;
+                }
+
+                &__description {
+                    margin: 0.5rem 0;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+// Footer
+.site-footer {
+    background-color: #343a40;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+
+    .footer__text {
+        margin-bottom: 1rem;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        &__link {
+            color: #fff;
+            font-size: 0.875rem;
+        }
+    }
+}
+
+// Responsivo
+@media (max-width: $mobile-breakpoint) {
+    .nav__menu {
+        flex-direction: column;
+    }
+
+    .features__list {
+        flex-direction: column;
+        align-items: center;
+
+        .feature {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}
