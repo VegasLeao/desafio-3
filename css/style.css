@@ -51,19 +51,39 @@ a:hover {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 .content .hero {
+  border: 1px solid red;
   text-align: center;
-  padding: 2rem 0;
-  background-color: #e9ecef;
+  padding: 2rem 1rem;
+  background-image: url(data:image/jpeg;base64,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);
+  background-size: cover; /* Faz com que a imagem cubra todo o container */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+  min-height: 300px; /* Define uma altura mínima para garantir que o conteúdo tenha espaço */
 }
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz com que a imagem cubra o container sem distorcer */
+  opacity: 0; /* Faz a imagem invisível */
+}
+
 .content .hero__title {
   font-size: 2rem;
   color: #343a40;
 }
+
 .content .hero__description {
   margin: 1rem 0;
   color: #6c757d;
 }
+
 .content .hero__cta {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -72,9 +92,13 @@ a:hover {
   border-radius: 5px;
   margin-top: 1rem;
 }
+
 .content .hero__cta:hover {
   background-color: #0062cc;
 }
+
+
+
 .content .features {
   margin-top: 3rem;
 }
@@ -99,6 +123,12 @@ a:hover {
 .content .features__list .feature__description {
   margin: 0.5rem 0;
   color: #6c757d;
+}
+.content .features__list .feature img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+  height: 200px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Faz com que a imagem se ajuste ao espaço sem distorção */
+  border-radius: 8px; /* Adiciona cantos arredondados */
 }
 
 .site-footer {
@@ -132,4 +162,4 @@ a:hover {
     width: 100%;
     margin-bottom: 2rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
